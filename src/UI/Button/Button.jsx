@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './Button.module.scss'
 
-const Button = ({outline, children}) => {
+const Button = ({outline, children, onClick}) => {
     return (
-        <button className={`${classes.button} ${outline ? classes.outline : ""}`}>
+        <button onClick={onClick} className={`${classes.button} ${outline ? classes.outline : ""}`}>
             {children}
         </button>
     )
